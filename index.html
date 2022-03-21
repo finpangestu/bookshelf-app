@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatitable" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bookshelf Apps</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="head-bar">
+            <h1 class="head-bar-title">Bookshelf Apps</h1>
+        </header>
+        <main>
+            <div class="content">
+                <section class="container">
+                    <h2 class="container-header">Tambahkan Buku Yang Ingin Dibaca</h2>
+                    <form class="form" action="#" id="form">
+                        <div class="form-group">
+                            <label for="title">Judul</label>
+                            <input id="title" type="text" name="title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="author">Penulis</label>
+                            <input id="author" type="text" name="author" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Tahun</label>
+                            <input id="year" type="number" name="year" required>
+                        </div>
+                        <div class="form-inline">
+                            <label for="isComplete" id="isCompleteLabel">Sudah Dibaca</label>
+                            <input id="isComplete" type="checkbox">
+                        </div>
+                        <button id="bookSubmit">Masukkan Buku ke Rak <span id="bookType"><strong>Belum Selesai Dibaca</strong></span></button>
+                        <button id="bookEdit">Edit Buku <span id="editBookType"><strong>Belum Seelsai Dibaca</strong></span></button>
+                    </form>
+                </section>
+                <section class="container">
+                    <h2 class="container-header">Belum selesai dibaca</h2>
+                    <div class="list-item" id="uncompleteBookshelfList">
+
+                    </div>
+                </section>
+                <section class="container">
+                    <h2 class="container-header">Selesai dibaca</h2>
+                    <div class="list-item" id="completeBookshelfList">
+
+                    </div>
+                </section>
+            </div>
+            <aside>
+                <section class="container">
+                    <h2 class="container-header">Cari Buku</h2>
+                    <form class="form" action="#" id="formSearch">
+                        <input class="searchBookTitle" id="searchBookTitle" type="text" placeholder="Masukkan Judul Buku...">
+                        <button id="bookSearch">Cari Buku</button>
+                    </form>
+                    <h2 class="container-header-search">Hasil Pencarian</h2>
+                    <div class="list-item-search" id="serchBookshelfList">
+
+                    </div>
+                </section>
+            </aside>
+        </main>
+        <footer>
+            Submission Belajar Membuat Front-End Web untuk Pemula &#169; 2022, Muhammad Alfin Pangestu
+        </footer>
+        <script src="js/main.js"></script>
+        <script src="js/dom.js"></script>
+        <script src="js/Storage.js"></script>
+    </body>
+</html>

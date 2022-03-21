@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+    box-sizing: border-box;
+}
+
+.head-bar {
+    padding: 5px;
+    background-color: rgb(3, 73, 94);
+    position: sticky;
+    top: 0;
+}
+
+.head-bar-title {
+    font-size: 35px;
+    font-weight: 400;
+    color: white;
+    margin-left: 30px;
+}
+
+main {
+    max-width: 1600px;
+    margin: auto;
+    padding: 20px;
+    overflow: auto;
+}
+
+.content {
+    float: left;
+    width: 58%;
+}
+
+.container {
+    box-shadow: 0 4px 8px 0 rgb(3, 73, 94);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.container > h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container > form > .form-group > input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    margin: 10px 0;
+}
+
+.container > form > button {
+    background: rgb(3, 73, 94);
+    color: white;
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.container > form > #bookEdit, 
+.container > form > #bookSubmit {
+    background: rgb(3, 73, 94);
+    color: white;
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.container > form > #bookEdit {
+    display: none;
+}
+
+.container > form > .form-inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.container > form > .form-inline > label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.container > .list-item > .book-item {
+    padding: 15px;
+    border: 2px solid rgb(3, 73, 94);
+    border-radius: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container > .list-item > .book-item > .info > h3, p {
+    margin: 8px 0;
+}
+
+.container > .list-item > .book-item > .action {
+    display: flex;
+    align-items: center;
+}
+
+.container > .list-item > .book-item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 10px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checklist {
+    background: url('../img/checklist.png');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.edit {
+    background: url('../img/edit.png');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.trash {
+    background: url('../img/trash-can.png');
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.undo {
+    background: url('../img/refresh.png');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.checklist:focus,
+.trash {
+    outline: none;
+}
+
+aside {
+    float: right;
+    width: 40%;
+}
+
+.container > form > .searchBookTitle {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.container > form > .btn-search {
+    background: rgb(3, 73, 94);
+    color: white;
+    padding: 9px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: rgb(3, 73, 94);
+    text-align: center;
+    font-weight: 400;
+    width: 100%;
+}
+
+@media screen and (max-width: 1080px) {
+    .content, 
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
