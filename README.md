@@ -1,2 +1,3 @@
 # bookshelf-app
-Bookshelf Apps
+Bookshelf Apps Buatan Muhammad Alfin Sebagai Tugas dari Kelas Belajar MEmbuat Front-End Web untuk Pemula
+dari Dicoding
